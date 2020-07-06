@@ -1,2 +1,2 @@
 # DecoupleSegNets
-Implementation of Our ECCV work: Improving Semantic Segmentation viaDecoupled Body and Edge Supervision
+Implementation of Our ECCV-2020 work: Improving Semantic Segmentation viaDecoupled Body and Edge Supervision
