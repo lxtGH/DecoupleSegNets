@@ -4,4 +4,4 @@ Implementation of Our ECCV-2020 work: Improving Semantic Segmentation viaDecoupl
 
 ![avatar](./fig/teaser.png)
 
-Code and Models will be available soon.
+Code and Models will be available soon(before the ECCV conference)
