@@ -131,4 +131,3 @@ class WiderResNetGFFDFPHead(nn.Module):
         out = self.cls(f)
 
         return out
-

@@ -297,6 +297,7 @@ class JointEdgeSegLoss(nn.Module):
         self.seg_body_loss = ImgWtLossSoftNLL(classes=classes,
                                      ignore_index=ignore_index,
                                      upper_bound=1.0, ohem=False).cuda()
+        self.edge_ohem_loss = OhemCrossEntropy2dTensor(ignore_index=ignore_index,min_kept=5000).cuda()
 
         self.ignore_index = ignore_index
         self.edge_weight = edge_weight
@@ -342,10 +343,8 @@ class JointEdgeSegLoss(nn.Module):
         return loss
 
     def edge_attention(self, input, target, edge):
-        n, c, h, w = input.size()
         filler = torch.ones_like(target) * 255
-        return self.seg_loss(input,
-                             torch.where(edge.max(1)[0] > 0.8, target, filler))
+        return self.edge_ohem_loss(input, torch.where(edge.max(1)[0] > 0.8, target, filler))
 
     def forward(self, inputs, targets):
         seg_in, seg_body_in, edge_in = inputs

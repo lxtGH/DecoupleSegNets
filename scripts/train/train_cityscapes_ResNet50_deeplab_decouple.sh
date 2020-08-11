@@ -7,7 +7,7 @@ python -m torch.distributed.launch --nproc_per_node=8 train.py \
   --dataset cityscapes \
   --cv 0 \
   --snapshot /path_to_fcn_models/FCN_r50_7.pth \
-  --arch network.deepv3_decouple.DeepR50FCN_m1_deeply \
+  --arch network.deepv3_decouple.DeepR50V3PlusD_m1_deeply \
   --class_uniform_pct 0.5 \
   --class_uniform_tile 1024 \
   --max_cu_epoch 150 \

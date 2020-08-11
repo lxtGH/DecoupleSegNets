@@ -6,12 +6,11 @@ mkdir -p ${EXP_DIR}
 python -m torch.distributed.launch --nproc_per_node=8 train.py \
   --dataset cityscapes \
   --cv 0 \
-  --snapshot /path_to_fcn_models/FCN_r50_7.pth \
-  --arch network.deepv3_decouple.DeepR50FCN_m1_deeply \
-  --class_uniform_pct 0.5 \
+  --arch network.deepv3.DeepR50V3PlusD_m1_deeply \
+  --class_uniform_pct 0.0 \
   --class_uniform_tile 1024 \
   --max_cu_epoch 150 \
-  --lr 0.005 \
+  --lr 0.01 \
   --lr_schedule poly \
   --poly_exp 1.0 \
   --repoly 1.5  \
@@ -23,11 +22,10 @@ python -m torch.distributed.launch --nproc_per_node=8 train.py \
   --scale_max 2.0 \
   --color_aug 0.25 \
   --gblur \
-  --max_epoch 175 \
+  --max_epoch 80 \
   --ohem \
   --coarse_boost_classes 14,15,16,3,12,17,4 \
-  --jointwtborder \
-  --joint_edgeseg_loss \
+  --ohem \
   --wt_bound 1.0 \
   --bs_mult 1 \
   --apex \
