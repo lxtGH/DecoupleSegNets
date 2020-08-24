@@ -195,9 +195,11 @@ class SqueezeBodyEdge(nn.Module):
         n, c, h, w = input.size()
 
         norm = torch.tensor([[[[out_w, out_h]]]]).type_as(input).to(input.device)
-        w = torch.linspace(-1.0, 1.0, out_h).view(-1, 1).repeat(1, out_w)
-        h = torch.linspace(-1.0, 1.0, out_w).repeat(out_h, 1)
-        grid = torch.cat((h.unsqueeze(2), w.unsqueeze(2)), 2)
+        # new
+        h_grid = torch.linspace(-1.0, 1.0, out_h).view(-1, 1).repeat(1, out_w)
+        w_gird = torch.linspace(-1.0, 1.0, out_w).repeat(out_h, 1)
+        grid = torch.cat((w_gird.unsqueeze(2), h_grid.unsqueeze(2)), 2)
+
         grid = grid.repeat(n, 1, 1, 1).type_as(input).to(input.device)
         grid = grid + flow.permute(0, 2, 3, 1) / norm
 
