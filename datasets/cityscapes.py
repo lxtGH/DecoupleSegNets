@@ -487,8 +487,8 @@ class CityScapesUniform(data.Dataset):
 
         if self.edge_map:
             # _edgemap = np.array(mask_trained)
-            _edgemap = mask[:-1, :, :]
-            _edgemap = edge_utils.onehot_to_binary_edges(_edgemap, 2, num_classes)
+            _edgemap = mask[:-1, :, :]  # c, h, w
+            _edgemap = edge_utils.onehot_to_binary_edges(_edgemap, 2, num_classes) # h, w
             edgemap = torch.from_numpy(_edgemap).float()
 
             return img, mask, edgemap, img_name

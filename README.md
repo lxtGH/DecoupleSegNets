@@ -32,6 +32,8 @@ opencv-python
 
 Baidu Pan Link: https://pan.baidu.com/s/1MWzpkI3PwtnEl1LSOyLrLw  4lwf
 
+Wider-ResNet-Imagenet Link: https://drive.google.com/file/d/1dGfPvzf4fS0aaSDnw2uahQpnBrUJfRDt/view?usp=sharing
+
 ## Trained Models and CKPT
 
 You can use these ckpts for training decouple models or doing the evaluations for saving both time and computation.
