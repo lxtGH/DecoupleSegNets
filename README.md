@@ -19,6 +19,12 @@ GFFNet:Gated Fully Fusion for semantic segmentation which also achieves the stat
 Dataloaders for Cityscapes, Mapillary, Camvid ,BDD and Kitti are available in [datasets](./datasets). 
 Details of preparing each dataset can be found at [PREPARE_DATASETS.md](https://github.com/lxtGH/DecoupleSegNets/blob/master/DATASETs.md)
 
+## Requirements
+
+pytorch >= 1.2.0
+apex
+opencv-python
+
 
 # Model Checkpoint
 
@@ -26,7 +32,7 @@ Details of preparing each dataset can be found at [PREPARE_DATASETS.md](https://
 
 Baidu Pan Link: https://pan.baidu.com/s/1MWzpkI3PwtnEl1LSOyLrLw  4lwf
 
-## Trained Models abd CKPT
+## Trained Models and CKPT
 
 You can use these ckpts for training decouple models or doing the evaluations for saving both time and computation.
 
