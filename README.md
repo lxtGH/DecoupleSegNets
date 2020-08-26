@@ -104,7 +104,8 @@ python ./demo/demo_folder_decouple.py
 ```
 
 # Citation
-If you find this repo is helpful to your research. Please consider cite our work.
+If you find this repo is helpful to your research Or our models are useful for your research.
+Please consider cite our work.
 
 ```
 @inproceedings{xiangtl_decouple
@@ -128,3 +129,7 @@ If you find this repo is helpful to your research. Please consider cite our work
 # Acknowledgement
 This repo is based on NVIDIA segmentation [repo](https://github.com/NVIDIA/semantic-segmentation). 
 We fully thank their open-sourced code.
+
+
+# License
+MIT License
