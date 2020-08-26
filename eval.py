@@ -58,7 +58,7 @@ parser.add_argument('--trunk', type=str, default='resnet101', help='cnn trunk')
 parser.add_argument('--dataset_dir', type=str, default=None,
                     help='Dataset Location')
 parser.add_argument('--split', type=str, default='val')
-parser.add_argument('--crop_size', type=int, default=513)
+parser.add_argument('--crop_size', type=int, default=832)
 parser.add_argument('--exp_name', type=str, default=None)
 parser.add_argument('--snapshot', required=True, type=str, default='')
 parser.add_argument('--ckpt_path', type=str, default=None)
