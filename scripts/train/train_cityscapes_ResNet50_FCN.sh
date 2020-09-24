@@ -22,9 +22,8 @@ python -m torch.distributed.launch --nproc_per_node=8 train.py \
   --scale_max 2.0 \
   --color_aug 0.25 \
   --gblur \
-  --max_epoch 100 \
+  --max_epoch  80 \
   --ohem \
-  --coarse_boost_classes 14,15,16,3,12,17,4 \
   --ohem \
   --wt_bound 1.0 \
   --bs_mult 1 \

@@ -11,8 +11,8 @@ python -m torch.distributed.launch --nproc_per_node=8 train.py \
   --class_uniform_pct 0.5 \
   --class_uniform_tile 1024 \
   --max_cu_epoch 150 \
-  --lr 0.001 \
-  --lr_schedule scl-poly \
+  --lr 0.005 \
+  --lr_schedule poly \
   --poly_exp 1.0 \
   --repoly 1.5  \
   --rescale 1.0 \
@@ -28,7 +28,6 @@ python -m torch.distributed.launch --nproc_per_node=8 train.py \
   --coarse_boost_classes 14,15,16,3,12,17,4 \
   --jointwtborder \
   --joint_edgeseg_loss \
-  --strict_bdr_cls 5,6,7,11,12,17,18 \
   --wt_bound 1.0 \
   --bs_mult 2 \
   --apex \

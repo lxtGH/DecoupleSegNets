@@ -25,7 +25,6 @@ python -m torch.distributed.launch --nproc_per_node=8 train.py \
   --gblur \
   --max_epoch 175 \
   --ohem \
-  --coarse_boost_classes 14,15,16,3,12,17,4 \
   --jointwtborder \
   --joint_edgeseg_loss \
   --wt_bound 1.0 \
