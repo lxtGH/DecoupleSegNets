@@ -1,3 +1,6 @@
+
+## DecoupleSegNets are also verified to handle the segmentation cases where the boundaries are important for the task. We will release the related code and paper once.
+
 # DecoupleSegNets
 This repo contains the the implementation of Our ECCV-2020 work: Improving Semantic Segmentation via Decoupled Body and Edge Supervision.
 
