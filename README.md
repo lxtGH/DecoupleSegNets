@@ -1,3 +1,5 @@
+## (New) DecoupleSegNets are supported by the [PaddleSeg](https://github.com/PaddlePaddle/PaddleSeg) which has better results !!! Thanks for their work!!!
+
 
 ## (New)DecoupleSegNets are also verified to handle the segmentation cases where the boundaries are important for the task. We will release the related code and paper in this repo.
 
