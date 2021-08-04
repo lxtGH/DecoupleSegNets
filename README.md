@@ -1,7 +1,10 @@
-## (New) DecoupleSegNets are supported by the [PaddleSeg](https://github.com/PaddlePaddle/PaddleSeg) which has better results !!! Thanks for their work!!!
-
+## (New) Improved Version of DecoupleSegNet for Glass-like object segmentation EBLNet-ICCV-2021 code [link](https://github.com/hehao13/EBLNet) !!
 
 ## (New)DecoupleSegNets are also verified to handle the segmentation cases where the boundaries are important for the task. We will release the related code and paper in this repo.
+
+
+## (New) DecoupleSegNets are supported by the [PaddleSeg](https://github.com/PaddlePaddle/PaddleSeg) which has better results !!! Thanks for their work!!!
+
 
 # DecoupleSegNets
 This repo contains the the implementation of Our ECCV-2020 work: Improving Semantic Segmentation via Decoupled Body and Edge Supervision.
