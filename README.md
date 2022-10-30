@@ -46,11 +46,11 @@ Wider-ResNet-Imagenet Link: https://drive.google.com/file/d/1dGfPvzf4fS0aaSDnw2u
 
 You can use these ckpts for training decouple models or doing the evaluations for saving both time and computation.
 
-Baidu Pan Link:
+DecoupleSegNet: Baidu Pan Link:
 link: https://pan.baidu.com/s/191joLpHxSByVKnJu8_w4_Q  password:yg4c
 
 
-Google Drive:
+GFFNet_Betst: Google Drive:
 link: https://drive.google.com/file/d/1wPF49PEdYHIvVLIAO5AsiEfc8ZmNkDY5/view?usp=sharing
 
 
